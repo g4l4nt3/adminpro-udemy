@@ -1,0 +1,14 @@
+
+- crea modelo de usuario.
+- en componente RegisterComponent agrega un FormGroup de ReactiveFormsModule!
+
+    this.forma = new FormGroup({
+      nombre: new FormControl( null, Validators.required ),
+      correo: new FormControl( null, [ Validators.required, Validators.email ] ),
+      password: new FormControl( null, Validators.required ),
+      password2: new FormControl( null, Validators.required ),
+      condiciones: new FormControl( false )  
+    });
+
+
+    
